@@ -1,0 +1,20 @@
+language: shell
+os: linux
+dist: focal
+
+addons:
+  apt:
+    packages:
+    - ffmpeg
+    - python3-pip
+    - python3-setuptools
+
+script:
+    - wget -P $HOME/.config $json
+    - wget -P $HOME/.config $session
+    - pip3 install telegram-upload
+    # Hardwork
+    - wget -q -O Episode-335.mp4 https://transfer.sh/FMKqXd/_Episode-335.mp4
+    - telegram-upload Episode-335.mp4 --caption 'Episodio 335'
+    - wget -q -O Episode-1.mp4 https://transfer.sh/TVDTwA/Capitulo_001.mp4
+    - telegram-upload Episode-1.mp4 --caption 'Capítulo 1 [HD]'
