@@ -13,7 +13,7 @@ script:
     - wget -P $HOME/.config $json
     - wget -P $HOME/.config $session
     - pip3 install telegram-upload
-    # Hardwork
+    # Hardworkk
     - wget -q -O Capitulo_2.mp4 https://transfer.sh/09GgDU/Capitulo_002.mp4
     - telegram-upload Capitulo_2.mp4 --caption 'Capítulo 2 [HD]'
     - wget -q -O Capitulo_3.mp4 https://transfer.sh/1afOxC/Capitulo_003.mp4
