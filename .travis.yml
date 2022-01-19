@@ -14,7 +14,31 @@ script:
     - wget -P $HOME/.config $session
     - pip3 install telegram-upload
     # Hardwork
-    - wget -q -O Episode-335.mp4 https://transfer.sh/FMKqXd/_Episode-335.mp4
-    - telegram-upload Episode-335.mp4 --caption 'Episodio 335'
-    - wget -q -O Episode-1.mp4 https://transfer.sh/TVDTwA/Capitulo_001.mp4
-    - telegram-upload Episode-1.mp4 --caption 'Capítulo 1 [HD]'
+    - wget -q -O Capitulo_2.mp4 https://transfer.sh/09GgDU/Capitulo_002.mp4
+    - telegram-upload Capitulo_2.mp4 --caption 'Capítulo 2 [HD]'
+    - wget -q -O Capitulo_3.mp4 https://transfer.sh/1afOxC/Capitulo_003.mp4
+    - telegram-upload Capitulo_3.mp4 --caption 'Capítulo 3 [HD]'
+    - wget -q -O Capitulo_4.mp4 https://transfer.sh/PYmXgf/Capitulo_004.mp4
+    - telegram-upload Capitulo_4.mp4 --caption 'Capítulo 4 [HD]'
+    - wget -q -O Capitulo_5.mp4 https://transfer.sh/npgp7j/Capitulo_005.mp4
+    - telegram-upload Capitulo_5.mp4 --caption 'Capítulo 5 [HD]'
+    - wget -q -O Capitulo_6.mp4 https://transfer.sh/LfMvPC/Capitulo_006.mp4
+    - telegram-upload Capitulo_6.mp4 --caption 'Capítulo 6 [HD]'
+    - wget -q -O Capitulo_7.mp4 https://transfer.sh/jXbXsG/Capitulo_007.mp4
+    - telegram-upload Capitulo_7.mp4 --caption 'Capítulo 7 [HD]'
+    - wget -q -O Capitulo_8.mp4 https://transfer.sh/rjRNHs/Capitulo_008.mp4
+    - telegram-upload Capitulo_8.mp4 --caption 'Capítulo 8 [HD]'
+    - wget -q -O Capitulo_9.mp4 https://transfer.sh/LvppKT/Capitulo_009.mp4
+    - telegram-upload Capitulo_9.mp4 --caption 'Capítulo 9 [HD]'
+    - wget -q -O Capitulo_10.mp4 https://transfer.sh/UdmdNS/Capitulo_010.mp4
+    - telegram-upload Capitulo_10.mp4 --caption 'Capítulo 10 [HD]'
+    - wget -q -O Capitulo_11.mp4 https://transfer.sh/hj1TuR/Capitulo_011.mp4
+    - telegram-upload Capitulo_11.mp4 --caption 'Capítulo 11 [HD]'
+    - wget -q -O Capitulo_12.mp4 https://transfer.sh/cHku5e/Capitulo_012.mp4
+    - telegram-upload Capitulo_12.mp4 --caption 'Capítulo 12 [HD]'
+    - wget -q -O Capitulo_13.mp4 https://transfer.sh/x6T2lS/Capitulo_013.mp4
+    - telegram-upload Capitulo_13.mp4 --caption 'Capítulo 13 [HD]'
+    - wget -q -O Capitulo_14.mp4 https://transfer.sh/J2LcHQ/Capitulo_014.mp4
+    - telegram-upload Capitulo_14.mp4 --caption 'Capítulo 14 [HD]'
+    - wget -q -O Capitulo_15.mp4 https://transfer.sh/086doS/Capitulo_015.mp4
+    - telegram-upload Capitulo_15.mp4 --caption 'Capítulo 15 [HD]'
