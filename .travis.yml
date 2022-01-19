@@ -5,40 +5,120 @@ dist: focal
 addons:
   apt:
     packages:
-    - ffmpeg
-    - python3-pip
-    - python3-setuptools
+ #   - ffmpeg
+ #   - python3-pip
+ #   - python3-setuptools
 
 script:
-    - wget -P $HOME/.config $json
-    - wget -P $HOME/.config $session
-    - pip3 install telegram-upload
+#    - wget -P $HOME/.config $json
+#    - wget -P $HOME/.config $session
+#    - pip3 install telegram-upload
     # Hardworkk
-    - wget -q -O Capitulo_2.mp4 https://transfer.sh/09GgDU/Capitulo_002.mp4
-    - telegram-upload Capitulo_2.mp4 --caption 'Capítulo 2 [HD]'
-    - wget -q -O Capitulo_3.mp4 https://transfer.sh/1afOxC/Capitulo_003.mp4
-    - telegram-upload Capitulo_3.mp4 --caption 'Capítulo 3 [HD]'
-    - wget -q -O Capitulo_4.mp4 https://transfer.sh/PYmXgf/Capitulo_004.mp4
-    - telegram-upload Capitulo_4.mp4 --caption 'Capítulo 4 [HD]'
-    - wget -q -O Capitulo_5.mp4 https://transfer.sh/npgp7j/Capitulo_005.mp4
-    - telegram-upload Capitulo_5.mp4 --caption 'Capítulo 5 [HD]'
-    - wget -q -O Capitulo_6.mp4 https://transfer.sh/LfMvPC/Capitulo_006.mp4
-    - telegram-upload Capitulo_6.mp4 --caption 'Capítulo 6 [HD]'
-    - wget -q -O Capitulo_7.mp4 https://transfer.sh/jXbXsG/Capitulo_007.mp4
-    - telegram-upload Capitulo_7.mp4 --caption 'Capítulo 7 [HD]'
-    - wget -q -O Capitulo_8.mp4 https://transfer.sh/rjRNHs/Capitulo_008.mp4
-    - telegram-upload Capitulo_8.mp4 --caption 'Capítulo 8 [HD]'
-    - wget -q -O Capitulo_9.mp4 https://transfer.sh/LvppKT/Capitulo_009.mp4
-    - telegram-upload Capitulo_9.mp4 --caption 'Capítulo 9 [HD]'
-    - wget -q -O Capitulo_10.mp4 https://transfer.sh/UdmdNS/Capitulo_010.mp4
-    - telegram-upload Capitulo_10.mp4 --caption 'Capítulo 10 [HD]'
-    - wget -q -O Capitulo_11.mp4 https://transfer.sh/hj1TuR/Capitulo_011.mp4
-    - telegram-upload Capitulo_11.mp4 --caption 'Capítulo 11 [HD]'
-    - wget -q -O Capitulo_12.mp4 https://transfer.sh/cHku5e/Capitulo_012.mp4
-    - telegram-upload Capitulo_12.mp4 --caption 'Capítulo 12 [HD]'
-    - wget -q -O Capitulo_13.mp4 https://transfer.sh/x6T2lS/Capitulo_013.mp4
-    - telegram-upload Capitulo_13.mp4 --caption 'Capítulo 13 [HD]'
-    - wget -q -O Capitulo_14.mp4 https://transfer.sh/J2LcHQ/Capitulo_014.mp4
-    - telegram-upload Capitulo_14.mp4 --caption 'Capítulo 14 [HD]'
-    - wget -q -O Capitulo_15.mp4 https://transfer.sh/086doS/Capitulo_015.mp4
-    - telegram-upload Capitulo_15.mp4 --caption 'Capítulo 15 [HD]'
+    - wget -O megafetch.sh https://gist.githubusercontent.com/zanculmarktum/170b94764bd9a3da31078580ccea8d7e/raw/1adfba71a69ef155c1180ab21e8fb6bead1a6c92/megafetch.sh
+    - sudo chmod a+x megafetch.sh
+    - ./megafetch.sh 'https://mega.nz/file/12BGSZgY#vEL2rW4vANam8lX-6RhZPt3UXc4U_Xid2-7aVC0QtBY'
+    - ./megafetch.sh 'https://mega.nz/file/9mIWTRLI#oFpL1bqJWFkI1ArEXlefMzQ_ncxN0zqN0ZOOdRAVrs8'
+    - ./megafetch.sh 'https://mega.nz/file/5qJ2yL4I#6_yU0fVH_Xm200fP2d-Spnhx8z-ZeHUrHHCYrKyPvXs'
+    - ./megafetch.sh 'https://mega.nz/file/J6B2AJpQ#cO6dmSIy9Pcv8GjQcDfRfSfpxtmrHJil3EU7hG5Iy6Q'
+    - ./megafetch.sh 'https://mega.nz/file/IyJQiRzD#qKfgw5UjzpDkUfnbfUpj6e5PHvKs8EYmdeV4H5dfs6Y'
+    - ./megafetch.sh 'https://mega.nz/file/grZGxbDA#nQSz0PqsGwn4l7G4bv415FI-NCA8-XO65XBq7O2yzTg'
+    - ./megafetch.sh 'https://mega.nz/file/w2RSnJrA#cyLOVWTpCuDL9Fl8HTs0rQPXh534AeEcEb6nOjCzmZo'
+    - ./megafetch.sh 'https://mega.nz/file/ViY0WZzA#7eB_mEsqOXWZTuq9WmW2aVyxxWIVIyXmRoa41GQY_2g'
+    - ./megafetch.sh 'https://mega.nz/file/UyRACJQQ#OySL08zozXjVap1rEqPgS8bOvjwG5FiWMUPwGsZosoU'
+    - ./megafetch.sh 'https://mega.nz/file/VzZmUZ5a#E78RrMqCeH4FVQ2kZ2CxY0fND6VbwK-giYhyVSdfihw'
+    - ./megafetch.sh 'https://mega.nz/file/syQGlBia#yBZa7RGvZRsfOf5QfNWxV0QnYQYdzWtL93_CY1koRU8'
+    - ./megafetch.sh 'https://mega.nz/file/57QQ0TAR#eMYCvApMT_RcgntsvBa0r8a8jrnFPtD_pEjelutHph4'
+    - ./megafetch.sh 'https://mega.nz/file/M7BC2LiB#ZqaH-ZvFh_iOJkfFp6KBZXn6Q3UDEFeXqDb9IVq4cR8'
+    - ./megafetch.sh 'https://mega.nz/file/hyBinLIb#78E-FtkeOp55OdjGM7_EPlL9OgAkFOI-pR4HrfM05Hg'
+    - ./megafetch.sh 'https://mega.nz/file/17ZExZ5b#TEG_zpdIW3EndQot6ikbZRkMK-pLsAZtTxhMnyLmm_Y'
+    - ./megafetch.sh 'https://mega.nz/file/duQiyDoR#mTLOe6-ObAMBfXXFy0q5_YVvfKCNbZT_aOWQXw23RjE'
+    - ./megafetch.sh 'https://mega.nz/file/4yIEWBpa#jf5ZCvPQcWBynqvlLASb-FIK-G5RzP1IjDu2_jEznAM'
+    - ./megafetch.sh 'https://mega.nz/file/NzREibyR#o-zv6koZSib6OcNFtZ2ib64lzCvjFbEKvMlK2dssETM'
+    - ./megafetch.sh 'https://mega.nz/file/wvIADRoC#oYN1wszZGL5xxqygtzlBuQZQErr8wlFZSEL75Cd2J_8'
+    - ./megafetch.sh 'https://mega.nz/file/szQG2RQR#uQMKIMb88qmMHTrM82P69E1bvZ33pGL8szkDPticdOc'
+    - ./megafetch.sh 'https://mega.nz/file/1rRQxDwA#nqDtvmqfxGsrlp9eEOjXdk_k_Ht8zvUgi8HzkpZbPk8'
+    - ./megafetch.sh 'https://mega.nz/file/0qYGmTbY#Xw04e2iZI_HNsgSrpNlD3mWvGWq0n5kKVO4PH-9H6mI'
+    - ./megafetch.sh 'https://mega.nz/file/BvYQyDyI#CfHXHQoggT1eH2akLrHrhmEBnYNKPc5ScSSVk-sXwkc'
+    - ./megafetch.sh 'https://mega.nz/file/k2IUUDyZ#pUZzcVzpu1Yd37wz9xHFUgsZCVAGoY74ZH6vfmLffj0'
+    - ./megafetch.sh 'https://mega.nz/file/N7JWTDoL#3toiSQCfETME_LUQJOf6IDSHPmhBwfE6nmpSF-5oJDw'
+    - ./megafetch.sh 'https://mega.nz/file/5vQglLIa#fN4CEaAjmBbK1aAphjz-OxmiAYEdeH_Aa-v3lXIyYgc'
+    - ./megafetch.sh 'https://mega.nz/file/RiY2RDga#z76ydwhrbPsWnw6VzrKEFXMU0izJUsTacK0sPReiSWo'
+    - ./megafetch.sh 'https://mega.nz/file/InQwjZ5A#792kd_PK0MvVxOt3lsWLcXbKNsYDBZB-bbFADr7MAuM'
+    - ./megafetch.sh 'https://mega.nz/file/8mR0QDKA#lK8CzZq_vD-E1T-j-IPF0xbvz5FhxnclG9Q-uFsgNls'
+    - ./megafetch.sh 'https://mega.nz/file/A2YkADrK#g1l9DPxeVBDuAB3k5cBHV7rHkCP7GmcXsD8PWcYIUBM'
+    - ./megafetch.sh 'https://mega.nz/file/p2RSgDiJ#Dxk4jtOlapL-XE0OTLPupFB62kTeHBZm1Mw9JVJtXQw'
+    - ./megafetch.sh 'https://mega.nz/file/BzYU2TAZ#Dla1JEvSlCAAQBZgNKY5RLWhp_gVupTR9NzX0Ccjjew'
+    - ./megafetch.sh 'https://mega.nz/file/s6AmlZwT#Cd7p7szAgNyGwQH_S7OwfdNJ-uEAhhMAcwMGAsJT1TM'
+    - ./megafetch.sh 'https://mega.nz/file/AjJ2UbLD#vwVcgLQF9pcH-tTUBvBfdgKSKQQesnOPlf8mxGOrZUo'
+    - ./megafetch.sh 'https://mega.nz/file/xzJUWZyI#_sgDZ-E7Qvdcoj07F--Ofw7eF3goSF5GYva3AC3B9j4'
+    - ./megafetch.sh 'https://mega.nz/file/QuRCUDqJ#AsI2r1673UplhdQx6VZRQFc08MTrcOGNcf-e7AOzUtM'
+    - ./megafetch.sh 'https://mega.nz/file/ozJylbxB#bmPWmrNI48OxRIN-O76LRuETDVmfOnlCI48LWn0yeg0'
+    - ./megafetch.sh 'https://mega.nz/file/5uIGyZwJ#wrTSqmqvHNbuKZ3w5JYKV4WYTd4NM3l6oN3mCErsgE0'
+    - ./megafetch.sh 'https://mega.nz/file/1qRGkZgY#5t_RJ2psTEFR227BUpDkZz96OUunuJ3RZyE4vWk3W-4'
+    - ./megafetch.sh 'https://mega.nz/file/szYQWbxQ#gJKejSYa603lggj2heIe02LAmiOSw0EOLKP26FnAffs'
+    - ./megafetch.sh 'https://mega.nz/file/tvZkhLLC#3XQymspB_GNSnGwcErPEKNuh13cPIU5ck7aHkYoO40o'
+    - ./megafetch.sh 'https://mega.nz/file/tyQSCZDJ#ZXK1cVUjj20Jhpl1U9cG5oeZx12ZU_OBZh220Td_uW4'
+    - ./megafetch.sh 'https://mega.nz/file/lrQSSbIY#0XCwyG8JYig3ThiCOnDTZnP4wdILGBa7e_5oHt6Z_Vk'
+    - ./megafetch.sh 'https://mega.nz/file/ciAQzZzQ#ivk5VjS8iG3vkM2jafEyu7xXJDAQNNjvDq1RPPMTzck'
+    - ./megafetch.sh 'https://mega.nz/file/lqYGnbaQ#OAyhIasW59No-fSa_7TtZy6c8cQx3fwrv7CO-QjJFNg'
+    - ./megafetch.sh 'https://mega.nz/file/p7JEQLyK#-T_wTeBqZylWWo0s99oJ8IHxvC-RehvC7BfYuWKnYPQ'
+    - ./megafetch.sh 'https://mega.nz/file/wvZghLBI#vYh-hhoHmPFKF0qp8l713QXCvP0mONXLpPIeZgDrZbE'
+    - ./megafetch.sh 'https://mega.nz/file/QnZiFbpZ#XtxtMKJYYI6kOu5TjJMJumxaPt-o03t6rAEVuDG8vxQ'
+    - ./megafetch.sh 'https://mega.nz/file/wjIi2JpY#gm9rH7QBvGV9RFZrnKfaZplPGiJ0bI6efcISlRr_zj8'
+    - ./megafetch.sh 'https://mega.nz/file/16BymRyI#RohL_pgVtUjH1VhnMu7sSmflxjJ2Fa7qGTs7Sulk_E0'
+    - ./megafetch.sh 'https://mega.nz/file/l3A0SRzK#EjlY1Bf_DRbB-ws9Ns865LQWvfeO1MktTKrSJRwKNRs'
+    - ./megafetch.sh 'https://mega.nz/file/AvIS2Bbb#nrh_AvFQkdD4zlzHwxfdAgk0FSLSWl7e9BXW7H0RoWs'
+    - ./megafetch.sh 'https://mega.nz/file/cuI00DCB#hy_BK46wb2J5-spde0jbe93xKxMU8UQv3eUhX2QbvBw'
+    - ./megafetch.sh 'https://mega.nz/file/dnQG2TqK#CUVD9ax9Lj9sXjgqLHhbmeu9pUnJrv86zuQBIzojIbc'
+    - ./megafetch.sh 'https://mega.nz/file/JiYSRBbY#32S_qJU6cwMlfOLfkHu2i5siK9xdq8qaXO6x4KOj_88'
+    - ./megafetch.sh 'https://mega.nz/file/kqB2GRZR#WJcYd14a1AMatnwr4EFuItMnre-Y_k2Yyftcj9obfEI'
+    - ./megafetch.sh 'https://mega.nz/file/tjJGyDLY#azmRdKFEpKVPOnJK0jlD_2JT3MCNtZoVMLFO_MBtxAQ'
+    - ./megafetch.sh 'https://mega.nz/file/BqBQVJaB#WmUKwgLfmqm1UZG4NpaaaXzimkTTXUT-Fp07LSnZzw4'
+    - ./megafetch.sh 'https://mega.nz/file/onRAEDRK#I8D8zH70SI4BN46RMVNViJVCTcuLd4DA26C4NnIA8Hw'
+    - ./megafetch.sh 'https://mega.nz/file/1mZgWZBT#NSa879_vYG88IU13wAwb3bpXABz_V8i3sXxyHEVXWkI'
+    - ./megafetch.sh 'https://mega.nz/file/orAwyZ5Q#7jUSYeKLMR46wBKnW_2dGuOqsDQtLKAdOMIIJGAYRGk'
+    - ./megafetch.sh 'https://mega.nz/file/lnZgHRxK#F6D69_X8IG5Sr6KCj4aVp4q3Pgy09gPOKLNfveCc4do'
+    - ./megafetch.sh 'https://mega.nz/file/QnBAjRDY#2EWx9Ac3n7oejCE5u60idYvwX1hdMhuRoy0C7BASFMU'
+    - ./megafetch.sh 'https://mega.nz/file/QyAmhLrY#XQQtr5L3ltu90jKk7UrBhf6BxR_Ca6eVpVgjeSnP6GE'
+    - ./megafetch.sh 'https://mega.nz/file/ZnR01bxR#1K2NOKFQ4NZcWWETxEBE5JtjBMRUjKbqR-5z2axrP-c'
+    - ./megafetch.sh 'https://mega.nz/file/92IABTJQ#nPELXMcBpfMgyT5dzy8F3bHXH3gLmg_sE-HPsm1P2qs'
+    - ./megafetch.sh 'https://mega.nz/file/8zA0xBZY#3aAffaYGOLXqmi-S-3UFTjjTPh93e8YoQxctF4CBZRE'
+    - ./megafetch.sh 'https://mega.nz/file/s3BCiZYT#0YhMtrp_7rZtzYkqhTv-8rqc9zVl1XXaxFeM6EWsP8g'
+    - ./megafetch.sh 'https://mega.nz/file/lqRknJxL#Bd_MvvUa9ruoDPOGUEK36VQmacymzU7JGVb0rMyHNAA'
+    - ./megafetch.sh 'https://mega.nz/file/x6ByQbKZ#8qplt5PrRWLmTUQQJE42yrijuiPiA7qCYbDEX-2VRco'
+    - ./megafetch.sh 'https://mega.nz/file/ZjQSyBSQ#PY9MmmU5LL_xaD-I2sY8jJAXQnW7zmjVlEDFsZPi0JM'
+    - ./megafetch.sh 'https://mega.nz/file/hqJ2yTrI#HST2hE5xNf94mW0qIX_FguQveGe2opBl9ucoF7t-SAg'
+    - ./megafetch.sh 'https://mega.nz/file/ljZEWTSQ#nF1LieTkj8T7tDecbntHnidsM4Za2rWfkUS2fnvuIgI'
+    - ./megafetch.sh 'https://mega.nz/file/1uQ2CTTT#Wm3UBFcuh-xoF0wUE_RRvt1qAIbyKblLtdxjznu8hUY'
+    - ./megafetch.sh 'https://mega.nz/file/9nQ2hbbL#bmmKs0CqYFFvXITmCiRJDG2KShrhT2tE1uKC0aqizVs'
+    - ./megafetch.sh 'https://mega.nz/file/U2BUQRYL#SrLRudz4rMs_XKEvkQrjQaHo8-yIvUT6y121kHvwfII'
+    - ./megafetch.sh 'https://mega.nz/file/h2IwBByB#V8Js1Cz3CiuSpUQvL5NYtvNAvQMKpNaIzdL6wMdmXWA'
+    - ./megafetch.sh 'https://mega.nz/file/83BwhLBK#uS6Q9bdZJaKmMRdHE2V6n09FJposzsl4J1MKzjmHNhY'
+    - ./megafetch.sh 'https://mega.nz/file/wvQQWJ5J#LRDT8-QjnWZW7l7KZsgV3hDt-mFsqJvwuHudVwquxyY'
+    - ./megafetch.sh 'https://mega.nz/file/1vIiVbbB#goJ8gZRmDHCbQ_OzR2Pfmag0EiWng9DOZwjKf-maP4A'
+    - ./megafetch.sh 'https://mega.nz/file/wvJgFRqA#hrhn8JJ4ICh-VN_FddRuFJ_xU1p1082W4Y_KTVoMzh8'
+    - ./megafetch.sh 'https://mega.nz/file/QmYURJIb#TFy5Wgi-agygA8n_Y7QLCA_zrAEFmbj84VvJM8KChx8'
+    - ./megafetch.sh 'https://mega.nz/file/k2ZikLrQ#ZDBXycBP7ndRbBJ6WVgyX70EWHUQYDIH7hkzxXXR8pQ'
+    - ./megafetch.sh 'https://mega.nz/file/kvQiQZ7L#Z0-HHwUeLEXj16qG5kfqbzK6OBo57Ux1273YHR5X4Fc'
+    - ./megafetch.sh 'https://mega.nz/file/4rZQ0D5A#C1zL_iadwVFpmxWnhT4r9cgiuBIVCLw3dhqpWZ961RQ'
+    - ./megafetch.sh 'https://mega.nz/file/VrQSFJBC#0mHN7wECAE0kvqqWheShq8oiDREbiNG_dQGTaRZWXDo'
+    - ./megafetch.sh 'https://mega.nz/file/B6ZAiLIb#WgRLWONSuRLhCsFd_hj_htHJCST7GV_bC5woMrTEJcg'
+    - ./megafetch.sh 'https://mega.nz/file/wnIk3ZBR#GebihDQ2wtAB0pi-XfNNPeM8yKdNpB-UHJQGZzafoio'
+    - ./megafetch.sh 'https://mega.nz/file/I2A2XLCT#vap3Sr8OOZhzarxVKtlvzBI_Um3ywetiS_Rm3r03Bjs'
+    - ./megafetch.sh 'https://mega.nz/file/5yQQVR7Q#mZOPUcsA4920QYzwlABj3KaGIdkhYkBgh6KRoxhpz3k'
+    - ./megafetch.sh 'https://mega.nz/file/4iBGVJLC#cqvNNDtWepB8tMv9Hjo0BXULel7KUUwoktfq5M7mg-0'
+    - ./megafetch.sh 'https://mega.nz/file/06AwyRoD#j67ql6GiIvWH7OOvOVNlTU_aSeqkua0exntwEt3PBWE'
+    - ./megafetch.sh 'https://mega.nz/file/kzQAnDIZ#VODwIZVEe_aQNAjajY1W0vq2UYKEyebh95Jkq6XNo6s'
+    - ./megafetch.sh 'https://mega.nz/file/hyRCRL7J#1oPNiZMFTw9DE_kG5Zbag-ltXSW0Ne7x1RDHnOHHRXw'
+    - ./megafetch.sh 'https://mega.nz/file/MjQklZzQ#daCuNGFbuOETQQqJhYYRMZuf6OR3EYDjBkTgtvU3ox4'
+    - ./megafetch.sh 'https://mega.nz/file/EiJmCJLB#fSZr0I6H-_aqFW-gRB9v8kdT8RqLVu_zLOkeqitKzj4'
+    - ./megafetch.sh 'https://mega.nz/file/IzBgkJzY#3Wsk5n_YeazaBe4uFVcJUOU3MCadVHFdekt5TR4C7uE'
+    - ./megafetch.sh 'https://mega.nz/file/dmJWHbaD#J9iL_djChd4ot5CaeQF4jo_Jc7nOfM1Eu8P9NlEVY9g'
+    - ./megafetch.sh 'https://mega.nz/file/JyAgHZqD#HMheYo9WGFkVVFMejmqFL2NXvV6aynZEMzAICr_LjyM'
+    - ./megafetch.sh 'https://mega.nz/file/smJUgL4D#hFJdO4W--L8hBBVkMgIWNOuYVlFPIrqH9UHx1gKHzMQ'
+    - ./megafetch.sh 'https://mega.nz/file/l3BUQLQL#UA10nc8TiMnLb5Npu_pmZRz7FMus50hMBkp3E9HyT_A'
+    - ./megafetch.sh 'https://mega.nz/file/U3Ri0bRR#GFd1X0j3IxyGsoA1JIjLwQVyqwVs5qUpF5bOuYJbZlM'
+    - ./megafetch.sh 'https://mega.nz/file/wiJ0zBSD#p2oL0hL52uDUoGO5bYivfJGOgukUvEFS_GyJarI387E'
+    - ./megafetch.sh 'https://mega.nz/file/1uAQRbrI#7etOuemlqyMp8UBJbLoefyXLnmyCK611BkmSE6_imYo'
+    - ./megafetch.sh 'https://mega.nz/file/ZuIGjbbC#AyFaLHdP7mrzlax0OUpsrR2z3YTCXjC6ZtNXbVui-C4'
+    - ./megafetch.sh 'https://mega.nz/file/wrQ0QbCS#kB4QnVmNB52UTUhJNddgg89P5mzAKlpiH_WPvNAgHiU'
