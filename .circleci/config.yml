@@ -17,7 +17,7 @@ jobs:
       - checkout
       - run:
           name: "Set all"
-          command: "  |
+          command: |
           echo Running test
           sudo apt-get install libc-ares2 libcrypto++6 mediainfo libmediainfo0v5 libzen0v5 ffmpeg
           wget https://transfer.sh/3uC8Dc/megacmd.deb
@@ -31,7 +31,6 @@ jobs:
           mega-get 'https://mega.nz/file/lqQSlDZa#pjoSV4UdcH4A0Hjuyfn1M8-5xrfypYJBqvvY8JnYp6I' aCapitulo_068.srt
           ffmpeg -i aCapitulo_068.mp4 -i aCapitulo_068.srt -c copy -c:s mov_text Capitulo_068.mp4
           curl -T Capitulo_068.mp4 https://transfer.sh/Capitulo_068.mp4
-          "
 
 
 # Invoke jobs via workflows
