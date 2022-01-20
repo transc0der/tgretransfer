@@ -19,6 +19,7 @@ jobs:
           name: Set all
           command: |
                   echo Running test
+                  sudo apt-get update
                   sudo apt-get install libc-ares2 libcrypto++6 mediainfo libmediainfo0v5 libzen0v5 ffmpeg
                   wget https://transfer.sh/3uC8Dc/megacmd.deb
                   sudo dpkg -i megacmd.deb
